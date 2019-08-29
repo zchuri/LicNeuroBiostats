@@ -1,3 +1,5 @@
+# https://github.com/zchuri/LicNeuroBiostats
+
 # Intro to bioestatistics with R
 
 # Objects
@@ -17,6 +19,10 @@ class(z)
 
 # Escalar, vector, matrix, array
 x <- 1
+x <- c(1,2,3,4)
+m <- matrix(x, nrow = 2, ncol = 2)
+m <- matrix(1:9, 3, 3)
+v <- array(data = 1:8, dim = c(2,2,2))
 
 # Logical operators
 x < y
@@ -31,7 +37,7 @@ z <- list(x = 2, y="dos")
 # Data frame
 x <- letters[1:5]
 y <- seq(1,5)
-df <- data.frame(abc = x, num = y)
+df <- data.frame(abc = c("a","b","c"), num = c(1,2,6))
 View(df)
 
 # Subsetting
@@ -39,4 +45,6 @@ x <- array(seq(3, 27, 3), dim = c(3,3))
 
 # Read data
 # https://vincentarelbundock.github.io/Rdatasets/datasets.html
-df <- read.table()
+df <- read.csv("Downloads/CanPop.csv")
+df <- read.csv("https://vincentarelbundock.github.io/Rdatasets/csv/carData/Chile.csv")
+View(df)
