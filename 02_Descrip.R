@@ -7,23 +7,24 @@ rm(list = ls())
 help("datasets")
 
 # Frequencies
-df <- datasets::quakes
-table(df$stations)
+DF <- datasets::quakes
+View(DF)
+table(DF$stations)
 
 # Barplot
-barplot(table(df$stations))
+barplot(table(DF$stations))
 
 # Histogram
-hist(df$mag)
+hist(DF$mag)
 
 # Boxplot
-boxplot(df$mag)
+boxplot(DF$mag)
 
 # Scatterplot
-plot(df$mag)
+plot(DF$mag)
 
 # Timeseries
-plot(df$mag, type = "l")
+plot(DF$mag, type = "l")
 
 # Sampling
 sample()
@@ -33,14 +34,14 @@ sample()
 # https://www.stat.umn.edu/geyer/old/5101/rlook.html
 
 # Central tendency measures
-summary(df$mag)
-mean(df$mag)
-median(df$mag)
-mode(df$mag)
+summary(DF$mag)
+mean(DF$mag)
+median(DF$mag)
+mode(DF$mag)
 
 # Load package 'psych'
 library(psych)
-describe(df$mag)
+describe(DF$mag)
 
 # Quantiles
-quantile(df$mag, 0.25)
+quantile(DF$mag, 0.25)
