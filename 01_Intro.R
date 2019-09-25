@@ -37,14 +37,14 @@ z <- list(x = 2, y="dos")
 # Data frame
 x <- letters[1:5]
 y <- seq(1,5)
-df <- data.frame(abc = c("a","b","c"), num = c(1,2,6))
-View(df)
+DF <- data.frame(abc = c("a","b","c"), num = c(1,2,6))
+View(DF)
 
 # Subsetting
 x <- array(seq(3, 27, 3), dim = c(3,3))
 
 # Read data
 # https://vincentarelbundock.github.io/Rdatasets/datasets.html
-df <- read.csv("Downloads/CanPop.csv")
-df <- read.csv("https://vincentarelbundock.github.io/Rdatasets/csv/carData/Chile.csv")
-View(df)
+DF <- read.csv("Downloads/CanPop.csv")
+DF <- read.csv("https://vincentarelbundock.github.io/Rdatasets/csv/carData/Chile.csv")
+View(DF)
